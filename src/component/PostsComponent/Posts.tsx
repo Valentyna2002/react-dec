@@ -10,7 +10,7 @@ loadPosts().then(value => setPost(value))
     },[])
 
     return (
-        <div className="bg-blue-200">
+        <div className='bg-amber-300'>
             {
                post.map(post=> <Post post={post} key={post.id}/>)
             }
