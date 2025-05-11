@@ -1,4 +1,6 @@
 import {TodoModel} from "../model/TodoModel.ts";
+import {CommentModel} from "../model/CommentModel.ts";
+import {PostModel} from "../model/PostModel.ts";
 
 const endpoint = import.meta.env.VITE_API_BASE_URL;
 
@@ -8,9 +10,15 @@ export const loadTodos = async () => {
 
     return response}
 
-const endpoint2= import.meta.env.VITE_API_BASE_URL2;
+const endpointPost= import.meta.env.VITE_API_BASE_URL2;
 
-export const loadPosts = async () => {
-  return  await fetch(endpoint2).then(value => value.json())
+export const loadPosts = async ():Promise<PostModel[]> => {
+  return  await fetch(endpointPost).then(value => value.json())
+}
+
+const endpointComment= import.meta.env.VITE_API_BASE_URL3;
+
+export const loadComment= async ():Promise<CommentModel[]> => {
+    return await fetch(endpointComment).then(value => value.json())
 }
 
