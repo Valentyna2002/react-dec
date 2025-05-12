@@ -1,6 +1,6 @@
 import { useEffect, useState} from "react";
-import {TodoModel} from "../../model/TodoModel.ts";
-import {loadTodos} from "../../servise/api.servise.ts";
+import {TodoModel} from "../../../../model/TodoModel.ts";
+import {loadTodos} from "../../../../servise/api.servise.ts";
 import {Todo} from "../TodoComponent/Todo.tsx";
 
 export const Todos = () => {

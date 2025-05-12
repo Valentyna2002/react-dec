@@ -1,0 +1,19 @@
+import {PostModel} from "../../../../model/PostModel.ts";
+import {FC} from "react";
+import './post.css'
+
+
+type PostProps={
+    post:PostModel
+}
+export const Post:FC<PostProps> = ({post:{id,title,body}}) => {
+
+
+    return (
+        <div className='m-5'>
+            <h1 className='bg-blue-400'>ID: {id}___ {title}</h1>
+            <p className='bg-blue-200'>{body}</p>
+
+        </div>
+    )
+}

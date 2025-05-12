@@ -4,3 +4,11 @@ export interface PostModel {
   title: string;
   body: string;
 }
+
+
+export interface PostModelDummy {
+  posts: PostModel[];
+  total: number;
+  skip: number;
+  limit: number;
+}

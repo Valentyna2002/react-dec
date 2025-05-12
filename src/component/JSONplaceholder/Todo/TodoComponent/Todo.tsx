@@ -1,4 +1,4 @@
-import {TodoModel} from "../../model/TodoModel.ts";
+import {TodoModel} from "../../../../model/TodoModel.ts";
 import {FC} from "react";
 
 type PropType={

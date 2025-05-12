@@ -1,15 +1,28 @@
 import './App.css'
-import {Todos} from "./component/TodosComponents/Todos.tsx";
-import {Posts} from "./component/PostsComponent/Posts.tsx";
-import {Comments} from "./component/CommentsComponent/Comments.tsx";
+import {DummyPostsComponent} from "./component/Dummyjson/DummyPost/DummyPostsComponent.tsx";
+import {CommentsComponentDummy} from "./component/Dummyjson/DummyComment/CommentsComponentDummy.tsx";
+import {TodosDummyComponent} from "./component/Dummyjson/DummyTodo/TodosDummyComponent.tsx";
+import {ProductsComponent} from "./component/Dummyjson/DummyProducts/ProductsComponent.tsx";
+
+// import {Comments} from "./component/JSONplaceholder/Comment/CommentsComponent/Comments.tsx";
+// import {Posts} from "./component/JSONplaceholder/Post/PostsComponent/Posts.tsx";
+// import {Todos} from "./component/JSONplaceholder/Todo/TodosComponents/Todos.tsx";
 
 function App() {
   return (<>
-        <Todos/>
+        {/*<Todos/>*/}
+        {/*  <hr/>*/}
+        {/*  <Posts/>*/}
+        {/*<hr/>*/}
+        {/*<Comments/>*/}
+          <DummyPostsComponent/>
           <hr/>
-          <Posts/>
-        <hr/>
-        <Comments/>
+          <CommentsComponentDummy/>
+          <hr/>
+          <TodosDummyComponent/>
+          <hr/>
+          <ProductsComponent/>
+
   </>
   )}
 

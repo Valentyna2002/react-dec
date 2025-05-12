@@ -1,12 +1,18 @@
 import {Post} from "../PostComponenet/Post.tsx";
 import {useEffect, useState} from "react";
-import {PostModel} from "../../model/PostModel.ts";
-import {loadPosts} from "../../servise/api.servise.ts";
+import {PostModel} from "../../../../model/PostModel.ts";
+import {loadPosts} from "../../../../servise/api.servise.ts";
 
 export const Posts = () => {
     const [post, setPost] = useState<PostModel[]>([])
     useEffect(()=>{
-loadPosts().then(value => setPost(value))
+        async function fetchPost(){
+            const allPosts = await loadPosts()
+            setPost(allPosts)
+        }
+      fetchPost()
+
+
     },[])
 
     return (
