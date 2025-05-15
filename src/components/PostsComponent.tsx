@@ -1,7 +1,7 @@
 export const PostsComponent = () => {
     return (
         <div>
-            POSTS
+            PostsComponent
         </div>
     )
 }

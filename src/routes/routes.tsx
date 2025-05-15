@@ -1,9 +1,11 @@
 import {createBrowserRouter} from "react-router-dom";
 import App from "../App.tsx";
-import {UsersComponent} from "../component/UsersComponent/UsersComponent.tsx";
-import {PostsComponent} from "../component/PostComponent/PostsComponent.tsx";
-import {ProductsComponent} from "../component/ProductsComponent/ProductsComponent.tsx";
-import {CommentsComponent} from "../component/CommentsComponent/CommentsComponent.tsx";
+
+
+import {UsersComponent} from "../components/UsersComponent.tsx";
+import {PostsComponent} from "../components/PostsComponent.tsx";
+import {CommentsComponent} from "../components/CommentsComponent.tsx";
+import {ProductsComponent} from "../components/ProductsComponent.tsx";
 
 export const router = createBrowserRouter([
     {

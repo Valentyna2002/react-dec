@@ -3,11 +3,13 @@ import './index.css'
 // import {RouterProvider} from "react-router-dom";
 // import {router} from "./router/routes.tsx";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import {UsersComponent} from "./component/UsersComponent/UsersComponent.tsx";
-import {PostsComponent} from "./component/PostComponent/PostsComponent.tsx";
-import {CommentsComponent} from "./component/CommentsComponent/CommentsComponent.tsx";
-import {ProductsComponent} from "./component/ProductsComponent/ProductsComponent.tsx";
+
 import App from "./App.tsx";
+import {UsersComponent} from "./components/UsersComponent.tsx";
+import {PostsComponent} from "./components/PostsComponent.tsx";
+import {CommentsComponent} from "./components/CommentsComponent.tsx";
+import {ProductsComponent} from "./components/ProductsComponent.tsx";
+
 
 
 

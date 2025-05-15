@@ -1,7 +1,7 @@
 export const CommentsComponent = () => {
     return (
         <div>
-            COMMENTS
+            CommentsComponent
         </div>
     )
 }

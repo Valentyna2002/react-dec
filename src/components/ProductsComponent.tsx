@@ -1,7 +1,7 @@
 export const ProductsComponent = () => {
     return (
         <div>
-            PRODUCTS
+            ProductsComponent
         </div>
     )
 }
