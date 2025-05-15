@@ -1,8 +1,14 @@
 import './App.css'
+import {Outlet} from "react-router";
+import {Menu} from "./component/Menu/Menu.tsx";
 
 function App() {
   return (<>
-  </>)
+    <Menu/>
+    This is App component
+   <Outlet/>
+
+     </>)
 }
 
 export default App
