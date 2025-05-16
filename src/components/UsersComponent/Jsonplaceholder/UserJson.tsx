@@ -14,7 +14,7 @@ export const UserJson:FC<UserProps> = ({user}) => {
             <h3>EMAIL: {user.email}</h3>
             <p>address:{user.address.city},{user.address.street}, {user.address.zipcode}</p>
             <p>website: {user.website}</p>
-            
+
         </div>
     )
 }
