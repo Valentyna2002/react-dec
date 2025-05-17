@@ -1,6 +1,6 @@
 
 import {Outlet} from "react-router";
-import {UsersMenu} from "../Menu/UsersMenu.tsx";
+import {UsersMenu} from "../Pages/UsersMenu.tsx";
 
 export const UsersComponent = () => {
     return (

@@ -9,6 +9,7 @@ import {PostsDummy} from "../components/PostsComponent/DummyJson/PostsDummy.tsx"
 import {UsersJson} from "../components/UsersComponent/Jsonplaceholder/UsersJson.tsx";
 import {UsersDummy} from "../components/UsersComponent/DummyJson/UsersDummy.tsx";
 import {CommentsDummy} from "../components/CommentsComponent/DummyJson/CommentsDummy.tsx";
+import {CartsDummy} from "../components/CartsComponent/CartsDummy.tsx";
 
 export const router= createBrowserRouter([
     {
@@ -16,7 +17,11 @@ export const router= createBrowserRouter([
         children:[
             {path:'users', element:<UsersComponent/>,children:[
                     {path:'jsonplaceholder',element:<UsersJson/>},
-                    {path:'dummyjson',element:<UsersDummy/>}
+                    {path:'dummyjson',element:<UsersDummy/>
+                        // ,children:[{path:':id/carts', element:<CartsDummy/>}]
+                    },
+                    {path:'dummyjson/:id/carts',element:<CartsDummy/>}
+
                 ]},
             { path:'posts', element:<PostsComponent/>,children:[
                     {path:'jsonplaceholder',element:<PostsJson/>},

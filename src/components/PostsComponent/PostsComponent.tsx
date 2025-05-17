@@ -1,4 +1,4 @@
-import {PostsMenu} from "../Menu/PostsMenu.tsx";
+import {PostsMenu} from "../Pages/PostsMenu.tsx";
 import {Outlet} from "react-router";
 
 export const PostsComponent = () => {

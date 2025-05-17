@@ -1,4 +1,4 @@
-import {CommentsMenu} from "../Menu/CommentsMenu.tsx";
+import {CommentsMenu} from "../Pages/CommentsMenu.tsx";
 import {Outlet} from "react-router";
 
 export const CommentsComponent = () => {
